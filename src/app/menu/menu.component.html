@@ -1,1 +1,18 @@
-<p>menu works!</p>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+  
+        <a mat-list-item > repertuar </a>
+        <a mat-list-item > Price List </a>
+        
+        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div style="height: 88vh;">
+  
+        asdsadasds
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

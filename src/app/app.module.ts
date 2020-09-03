@@ -13,6 +13,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { RepertuarComponent } from './repertuar/repertuar.component';
 import { PriceListComponent } from './price-list/price-list.component';
+import { MatIconModule, MatIcon} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,8 @@ import { PriceListComponent } from './price-list/price-list.component';
     MenuComponent,
     HeaderComponent,
     RepertuarComponent,
-    PriceListComponent
+    PriceListComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,10 @@ import { PriceListComponent } from './price-list/price-list.component';
     MatSliderModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule
 
   ],
   providers: [],
