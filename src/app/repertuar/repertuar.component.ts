@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RepertuarService } from './shared/repertuar.service';
+import {FilmModel} from './shared/film.model';
 
 @Component({
   selector: 'app-repertuar',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repertuar.component.css']
 })
 export class RepertuarComponent implements OnInit {
-
-  constructor() { }
+  films: any;
+  filmTitle = '';
+  currentIndex = -1;
+   constructor(private repertuarService: RepertuarService) { }
 
   ngOnInit(): void {
+    this.fetchFilms();
+  }
+  fetchFilms(): void{
+    this.repertuarService.getAll()
+    .subscribe(
+      data => {
+        this.films = data;
+        console.log(data);
+      },
+      error => {
+        console.log(error);
+      });
   }
 
 }

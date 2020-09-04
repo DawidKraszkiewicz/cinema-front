@@ -1,1 +1,15 @@
-<p>repertuar works!</p>
+<div class="col-md-5">
+    <h4>Repertuar</h4>
+    <ul class="list-group">
+        <li class="list-group-item"
+        *ngFor="let film of films; let i = index;"
+        [class.active]="i == currentIndex">
+
+            {{film.filmTitle}}
+         </li>
+        
+
+
+        
+    </ul>
+</div>

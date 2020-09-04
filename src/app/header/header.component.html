@@ -1,18 +1,15 @@
 
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <button mat-icon-button>
-        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-      </button>
-      <h1>Cinema</h1>
+    
+      <span style="margin-left: 100px"> Angular Cinema </span>
       <span class="menu-spacer"></span>
-      <div>
-        
-      </div>
+      <button mat-icon-button [routerLink]="['/']" routerLinkActive="router-link-active" >
+        <mat-icon >home</mat-icon>
+      </button>
+      
     </mat-toolbar-row>
   
-    <mat-toolbar-row>
-        <span style="font-size: 12px;">A cinema app</span>
-      </mat-toolbar-row>
+    
   </mat-toolbar>
   

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component'
+import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +16,9 @@ import { PriceListComponent } from './price-list/price-list.component';
 import { MatIconModule, MatIcon} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { ActorComponent } from './actor/actor.component';
+import { HttpClientModule} from '@angular/common/http';
+import { RepertuarService } from './repertuar/shared/repertuar.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +27,7 @@ import { MatMenuModule } from '@angular/material/menu';
     HeaderComponent,
     RepertuarComponent,
     PriceListComponent,
+    ActorComponent,
 
   ],
   imports: [
@@ -36,10 +40,11 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [RepertuarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
