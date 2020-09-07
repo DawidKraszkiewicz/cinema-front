@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RepertuarService } from './shared/repertuar.service';
-import {FilmModel} from './shared/film.model';
+
 
 @Component({
   selector: 'app-repertuar',
@@ -9,7 +9,6 @@ import {FilmModel} from './shared/film.model';
 })
 export class RepertuarComponent implements OnInit {
   films: any;
-  filmTitle = '';
   currentIndex = -1;
    constructor(private repertuarService: RepertuarService) { }
 

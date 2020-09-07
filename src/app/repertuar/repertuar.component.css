@@ -1,0 +1,17 @@
+mat-card-content{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.item{
+    width: 200px;
+    height: 200px;
+}
+@media screen and (min-width: 480px){
+    body{
+        background-color: lightgreen;
+    }
+}

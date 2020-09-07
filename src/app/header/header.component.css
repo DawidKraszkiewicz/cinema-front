@@ -1,3 +1,30 @@
-.menu-spacer {
-flex: 1 1 auto;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #5bc0de;
+
+}
+.logo{
+    color: #f7f7f7;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links a{
+    color: #f7f7f7;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.nav-links li{
+    list-style: none;
 }

@@ -19,6 +19,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ActorComponent } from './actor/actor.component';
 import { HttpClientModule} from '@angular/common/http';
 import { RepertuarService } from './repertuar/shared/repertuar.service';
+import { MatCardModule } from '@angular/material/card';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,10 +43,12 @@ import { RepertuarService } from './repertuar/shared/repertuar.service';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
 
   ],
-  providers: [RepertuarService],
+  providers: [ { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+              RepertuarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

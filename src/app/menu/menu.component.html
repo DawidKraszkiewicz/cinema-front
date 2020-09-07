@@ -1,21 +1,17 @@
 <mat-sidenav-container>
-    <mat-sidenav  opened mode="side">
-      <mat-nav-list>
-  
-        <a mat-list-item [routerLink]="['/repertuar']" routerLinkActive="router-link-active"> <mat-icon >format_align_justify</mat-icon>repertuar </a>
-        <a mat-list-item [routerLink]="['/priceList']" routerLinkActive="router-link-active">  <mat-icon >money</mat-icon> Price List  </a>
-        <a mat-list-item [routerLink]="['/actors']" routerLinkActive="router-link-active">  <mat-icon >money</mat-icon> Actors  </a>
-        <a mat-list-item [routerLink]="['/filmBase']" routerLinkActive="router-link-active">  <mat-icon >money</mat-icon> Film Base  </a>
+  <mat-sidenav opened mode="side">
+    <mat-nav-list>
 
-          
-          
-  
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <div style="height: 88vh;">
-  
-        <router-outlet></router-outlet>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+      <a mat-list-item [routerLink]="['/repertuar']" routerLinkActive="router-link-active"> Repertuar </a>
+      <a mat-list-item [routerLink]="['/priceList']" routerLinkActive="router-link-active"> Price List </a>
+      <a mat-list-item [routerLink]="['/actors']" routerLinkActive="router-link-active"> Actors </a>
+      <a mat-list-item [routerLink]="['/filmBase']" routerLinkActive="router-link-active"> Film Base </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
