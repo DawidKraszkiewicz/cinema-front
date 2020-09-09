@@ -3,7 +3,7 @@
   <div>
     <h4 class="logo">Cinema</h4>
   </div>
-  <ul class="nav-links">
+  <ul class="nav-links" [ngStyle]="{transform: getHamburgerStatus()}">
     <li>
       <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
     </li>
@@ -17,7 +17,7 @@
       <a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
     </li>
   </ul>
-  <div class="burger" [ngClass]="{'nav-active': status == true}" (click)="onClick()">
+  <div class="burger" (click) = "onClick()">
     <div class="line1"></div>
     <div class="line2"></div>
     <div class="line3"></div>

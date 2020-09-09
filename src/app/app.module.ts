@@ -21,6 +21,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { RepertuarService } from './repertuar/shared/repertuar.service';
 import { MatCardModule } from '@angular/material/card';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { FilmComponent } from './film/film.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
     RepertuarComponent,
     PriceListComponent,
     ActorComponent,
+    FilmComponent,
 
   ],
   imports: [

@@ -53,29 +53,31 @@ ol, ul, li, h4{
 @media screen and (max-width: 768px){
     .wrapper{
         overflow-x: hidden;
-        position: relative;
+        
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 92vh;
         top: 8vh;
+        transform: translateX(100%);
+        background-color: #5bc0de;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50px;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
+        width: 50%;
+         }
     .nav-links li{
-        opacity: 0;
+        opacity: 1;
+        
     }
-    .burger{
+    ol, ul, li{
+        margin-left: 0px;
+    }
+    .burger {
         display: block;
     }
-    
-
 }
 .nav-active{
     transform: translateX(0%);
-}
+    }
