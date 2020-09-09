@@ -13,9 +13,9 @@ export class RepertuarService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any>{
-    return this.http.get(baseUrl);
+    return this.http.get(baseUrl.url);
   }
   get(id: any): Observable<any>{
-     return this.http.get(`${baseUrl}/${id}`);
+     return this.http.get(`${baseUrl.url}/${id}`);
   }
 }
