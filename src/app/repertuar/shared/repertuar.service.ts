@@ -14,7 +14,7 @@ export class RepertuarService {
   getAll(): Observable<any>{
     return this.http.get(baseUrl);
   }
-  get(id): Observable<any>{
+  get(id: any): Observable<any>{
      return this.http.get(`${baseUrl}/${id}`);
   }
 }

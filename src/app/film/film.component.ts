@@ -14,12 +14,12 @@ export class FilmComponent implements OnInit {
   ngOnInit(): void {
     this.getFilm(this.route.snapshot.paramMap.get('id'));
   }
-  getFilm(id): void {
+  getFilm(id: any): void {
     this.repertuarService.get(id)
       .subscribe(
         data => {
           this.film = data;
-          console.log(data);
+          console.log(this.film.film_title);
         },
         error => {
           console.log(error);

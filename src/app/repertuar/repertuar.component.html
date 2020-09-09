@@ -1,5 +1,5 @@
 <div class="container">
-  <mat-card class ="item" *ngFor="let film of films" [routerLink]="['/repertuar/film', film.id ]" routerLinkActive="router-link-active" >
+  <mat-card class ="item" *ngFor="let film of films" [routerLink]="['/repertuar/film', film.id]" routerLinkActive="router-link-active" >
     <img src ="http://localhost:3000/images/{{film.url}}" mat-card-image>
         <mat-card-content>
             {{ film.film_title }}
