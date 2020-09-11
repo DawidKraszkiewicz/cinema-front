@@ -19,7 +19,7 @@ export class FilmComponent implements OnInit {
       .subscribe(
         data => {
           this.film = data;
-          console.log(this.film.film_title);
+          console.log(data);
         },
         error => {
           console.log(error);

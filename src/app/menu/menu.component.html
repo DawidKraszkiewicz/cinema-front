@@ -1,17 +1,24 @@
-<mat-sidenav-container>
-  <mat-sidenav opened mode="side">
-    <mat-nav-list>
+<div class = "menu">
+<ul class="menu-content">
+    <li>
+      <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/repertuar']" routerLinkActive="router-link-active">Repertoire</a>
+    </li>
+    <li>
+      <a [routerLink]="['/priceList']" routerLinkActive="router-link-active">Prices</a>
+    </li>
+    <li>
+      <a [routerLink]="['/about']" routerLinkActive="router-link-active">Promos</a>
+    </li>
+    <li>
+      <a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
+    </li>
+    <li>
+      <a [routerLink]="['/about']" routerLinkActive="router-link-active">VR</a>
+    </li>
 
-      <a mat-list-item [routerLink]="['/repertuar']" routerLinkActive="router-link-active"> Repertuar </a>
-      <a mat-list-item [routerLink]="['/priceList']" routerLinkActive="router-link-active"> Price List </a>
-      <a mat-list-item [routerLink]="['/actors']" routerLinkActive="router-link-active"> Actors </a>
-      <a mat-list-item [routerLink]="['/filmBase']" routerLinkActive="router-link-active"> Film Base </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <div style="height: 88vh;">
-
-      <router-outlet></router-outlet>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    
+  </ul>
+</div>

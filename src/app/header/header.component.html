@@ -1,23 +1,24 @@
 <div class="wrapper">
 <nav class="nav">
-  <div>
-    <h4 class="logo">Cinema</h4>
-  </div>
-  <ul class="nav-links" [ngStyle]="{transform: getHamburgerStatus()}">
-    <li>
-      <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
-    </li>
-    <li>
-      <a [routerLink]="['/repertuar']" routerLinkActive="router-link-active">Repertoire</a>
-    </li>
-    <li>
-      <a [routerLink]="['/priceList']" routerLinkActive="router-link-active">Prices</a>
-    </li>
-    <li>
-      <a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
-    </li>
+  <li>
+    <img class="logo" src = "https://www.regmovies.com/xmedia/img/10110/logo.svg">
+  </li>
+  <ul class = "nav-links"> 
+<li>
+  <img src = "https://www.regmovies.com/xmedia/img/10110/locationpicker-map-marker.svg" >
+  <a>XXXXXXXX,Szczecin</a>
+</li>
+<li>
+  <img src = "https://www.regmovies.com/xmedia/img/user-icon.svg" >
+  <a>Log In</a>
+</li>
+
+<li>
+  <a></a>
+</li>
   </ul>
-  <div class="burger" (click) = "onClick()">
+  
+  <div class="burger" >
     <div class="line1"></div>
     <div class="line2"></div>
     <div class="line3"></div>

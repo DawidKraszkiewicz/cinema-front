@@ -12,11 +12,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick(): void{
-  this.hamburgerStatus = !this.hamburgerStatus;
-}
- getHamburgerStatus(){
-   return this.hamburgerStatus === true ? 'translateX(100%)' : 'translateX(0%)';
- }
+  
 }
  

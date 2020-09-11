@@ -2,34 +2,43 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    
     align-items: center;
-    min-height: 8vh;
-    background-color: #5bc0de;
+    min-height: 13vh;
+    background-color: #111111;
 
 }
 
 ol, ul, li, h4{
-    margin-bottom: 0px;
+    margin: 0px;
+
 }
 .logo{
-    color: #f7f7f7;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    align-items: center;
+    max-width: 100%; 
+    height: 6vh;
+    
 }
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 55%;
 }
 .nav-links a{
     color: #f7f7f7;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing:2px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
+    font-family: 'Montserrat'; 
 
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+.nav-links img{
+    height: 4vh;
+    margin-bottom: 1vh;
+    margin-right: 1vh;
 }
 .nav-links li{
     list-style:none;

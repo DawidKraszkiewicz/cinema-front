@@ -9,7 +9,6 @@ import { RepertuarService } from './shared/repertuar.service';
 })
 export class RepertuarComponent implements OnInit {
   films: any;
-  currentIndex = -1;
    constructor(private repertuarService: RepertuarService) { }
 
   ngOnInit(): void {

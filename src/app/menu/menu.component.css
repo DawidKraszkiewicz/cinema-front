@@ -1,0 +1,35 @@
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    align-items: center;
+    min-height: 9vh;
+    background-color: #F56600;
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+}
+.menu-content a{
+    max-height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Exo';
+    letter-spacing: 1px;
+}
+.menu-content a:hover{
+    background-color: #CB5300
+}
+ol,ul,li{
+    margin-bottom: 0px;
+}
+.menu-content li {
+    list-style: none;
+
+}
