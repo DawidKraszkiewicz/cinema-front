@@ -8,11 +8,21 @@ import { ActivatedRoute  } from '@angular/router';
 })
 export class FilmComponent implements OnInit {
   film: any;
+  player: YT.Player;
+   id = 'qDuKsiwS5xw';
   constructor(private repertuarService: RepertuarService
             , private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getFilm(this.route.snapshot.paramMap.get('id'));
+  }
+
+  savePlayer(player): void {
+    this.player = player;
+    console.log('player instance', player);
+  }
+  onStateChange(event): void{
+    console.log('player state', event.data);
   }
   getFilm(id: any): void {
     this.repertuarService.get(id)

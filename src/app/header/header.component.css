@@ -4,7 +4,7 @@
     flex-direction: row;
     
     align-items: center;
-    min-height: 13vh;
+    min-height: 10vh;
     background-color: #111111;
 
 }
@@ -21,6 +21,7 @@ ol, ul, li, h4{
 .nav-links{
     display: flex;
     justify-content: space-around;
+    
     width: 55%;
 }
 .nav-links a{

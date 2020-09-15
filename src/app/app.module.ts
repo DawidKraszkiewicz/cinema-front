@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { FilmComponent } from './film/film.component';
 
   ],
   imports: [
+    NgxYoutubePlayerModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

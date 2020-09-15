@@ -4,7 +4,7 @@
     flex-direction: row;
     
     align-items: center;
-    min-height: 9vh;
+    min-height: 6vh;
     background-color: #F56600;
 }
 .menu-content{
@@ -12,6 +12,10 @@
     justify-content: space-between;
     flex-direction: row;
     width: 80%;
+    
+}
+li{
+    padding: 1vh;
 }
 .menu-content a{
     max-height: 100%;
@@ -23,7 +27,7 @@
     font-family: 'Exo';
     letter-spacing: 1px;
 }
-.menu-content a:hover{
+.menu-content li:hover{
     background-color: #CB5300
 }
 ol,ul,li{

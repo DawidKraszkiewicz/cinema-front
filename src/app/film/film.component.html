@@ -1,2 +1,31 @@
-
-<p *ngIf = "film"> {{film[0].film_title}} </p>
+<div class = "wrapper">
+<div class="intro">
+    <h1>{{ film[0].film_title }}</h1>
+    <button mat-raised-button class="intro-button"> BOOK NOW </button>
+</div>
+<div class="player">
+    <youtube-player [videoId] = "id" (ready) = "savePlayer($event)" (change) = "onStateChange($event)">
+    
+    </youtube-player>
+</div>
+<div class="content"> 
+    <div class = "content-l">
+        <h2> More information</h2>
+        <div class="dates">
+            <div class="release">
+                <h4> Release date:</h4>
+            </div>
+            <div class="time">
+                <h4> Running time: </h4>
+            </div>
+        </div>
+        
+        <div class= "description">
+            {{ film[0].description}}
+        </div>
+    </div>
+    <div class = "content-r">
+    
+    </div>
+</div>
+</div>
