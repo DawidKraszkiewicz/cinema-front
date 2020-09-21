@@ -1,0 +1,14 @@
+<div class="content">
+    <div class="container" *ngIf = "film">
+        <h1>Buy Tickets for {{ film[0].film_title }} </h1>
+        <div class="date">
+            <ul>
+                <li *ngFor ="let weekday of weekdays; index as i" [ngClass]="{'chosen': i === day-1}"> {{ weekday }} </li>
+            </ul>
+             <input matInput [matDatepicker]="picker" placeholder="Input & change events" (dateInput)="addEvent($event)" >
+             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+             <mat-datepicker #picker></mat-datepicker>
+                {{day}}
+        </div>
+    </div>
+</div>

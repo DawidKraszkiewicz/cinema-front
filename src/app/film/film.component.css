@@ -1,6 +1,7 @@
 .content{
     display: flex;
     width: 100%;
+    
    
 }
 .mat-raised-button{
@@ -13,11 +14,12 @@
 youtube-player{
     display: block;
 }
-.wrapper{
-    color: #FFFFFF; 
+.container{
+    color: #FFFFFF;
 }
 .intro { 
     display: flex;
+    width:80%;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 2vh;
@@ -46,7 +48,11 @@ h2{
     display: block;
 }
 .dates{
-    display: block;
+    display: flex;
+    
+}
+.dates > div {
+    width: 20vh;
 }
 .description{
     font-family: "Exo", "Helvetica Neue", "Helvetica", "Arial", serif !important;

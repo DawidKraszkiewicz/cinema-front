@@ -1,0 +1,49 @@
+.content{
+    background-color: #FFFFFF;
+    min-height: 88vh;
+}
+h1, h2, h3, h4{
+    font-family: "Exo";
+}
+ul{
+    font-size: 32px; 
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+}
+h1{
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: 2vh;
+    margin-left: 2vh;
+}
+.date{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+span{
+    font-family: "Exo";
+    
+    font-size: 24px;
+}
+li{
+    list-style: none;
+}
+.basic-container{
+    padding: 30px;
+}
+input{
+    width: 200px;
+    height: 50px;
+}
+span:hover{
+    color: #F56600;
+
+}
+.chosen{
+    color: #F56600;
+}

@@ -1,7 +1,7 @@
-<div class = "wrapper">
+<div *ngIf = "film" class = "container">
 <div class="intro">
     <h1>{{ film[0].film_title }}</h1>
-    <button mat-raised-button class="intro-button"> BOOK NOW </button>
+    <button mat-raised-button class="intro-button" routerLink ="/booking/{{film[0].film_id}}" routerLinkActive="router-link-active" > BOOK NOW </button>
 </div>
 <div class="player">
     <youtube-player [videoId] = "id" (ready) = "savePlayer($event)" (change) = "onStateChange($event)">
@@ -14,9 +14,11 @@
         <div class="dates">
             <div class="release">
                 <h4> Release date:</h4>
+                <h4> {{film[0].year }} </h4>
             </div>
             <div class="time">
                 <h4> Running time: </h4>
+                <h2> {{film[0].film_date | date}}</h2>
             </div>
         </div>
         
