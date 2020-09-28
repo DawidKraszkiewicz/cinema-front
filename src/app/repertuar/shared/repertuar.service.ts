@@ -18,4 +18,7 @@ export class RepertuarService {
   get(id: any): Observable<any>{
      return this.http.get(`${baseUrl.url}/${id}`);
   }
+  getFilmHours(id: any): Observable<any>{
+    return this.http.get(`${baseUrl.url}/booking/${id}`);
+  }
 }

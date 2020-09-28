@@ -1,14 +1,37 @@
 <div class="content">
-    <div class="container" *ngIf = "film">
-        <h1>Buy Tickets for {{ film[0].film_title }} </h1>
-        <div class="date">
-            <ul>
-                <li *ngFor ="let weekday of weekdays; index as i" [ngClass]="{'chosen': i === day-1}"> {{ weekday }} </li>
-            </ul>
-             <input matInput [matDatepicker]="picker" placeholder="Input & change events" (dateInput)="addEvent($event)" >
-             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-             <mat-datepicker #picker></mat-datepicker>
-                {{day}}
-        </div>
+  <div class="container" *ngIf="film">
+    <h1 >Buy Tickets for {{ film[0].film_title }} </h1>
+    <div class="date">
+      <ul>
+        <li *ngFor= "let weekday of weekdays; let i = index">
+          <a [ngClass]="{'chosen': i === chosenDay}"(click)="setDay(i)" >{{weekday.day }} </a>
+        </li>
+        
+       
+      </ul>
+
+      <input matInput [matDatepicker]="picker" placeholder="date" (dateInput)="addEvent($event)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
     </div>
+    <h4></h4>
+
+  </div>
+  <div class="available">
+    <div class="container">
+      <div class="booking-description">
+        <h2>REGAL RIVIERA</h2>
+        <div class="location"></div>
+        <h3 i18n>screen type</h3>
+        <div class="hours-list">
+          <div *ngFor="let currentFilm of film">
+            <button mat-button> {{currentFilm.film_hour}}</button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+
+  </div>
 </div>

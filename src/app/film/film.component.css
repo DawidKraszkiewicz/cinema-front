@@ -40,6 +40,7 @@ h1{
     text-transform: capitalize;
     font-family: "Exo";
     font-weight: bold;  
+    margin-bottom: 4vh;
 }
 h2{
     font-family: "Exo", "Helvetica Neue", "Helvetica", "Arial", serif !important;
@@ -52,8 +53,9 @@ h2{
     
 }
 .dates > div {
-    width: 20vh;
+    width: 30vh;
 }
+
 .description{
     font-family: "Exo", "Helvetica Neue", "Helvetica", "Arial", serif !important;
     font-weight: 300;
